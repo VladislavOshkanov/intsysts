@@ -163,9 +163,9 @@ def main():
     df_train = pd.read_csv('/home/voshkanov/house-prices-datasets/train.csv', index_col='Id')
     df_test = pd.read_csv('/home/voshkanov/house-prices-datasets/test.csv', index_col='Id')
 
-    # print (df_train)
+    print (df_train.head(5))
 
-
+    exit
     print('Categorical: ', df_train.select_dtypes(include=['object']).columns)
 
     #numerical features (see comment about 'MSSubCLass' here above)
